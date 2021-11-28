@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.example.listviewpractice_jaewhi.R
 import com.example.listviewpractice_jaewhi.datas.Student
-
+//    StudentAdapter가 회색인 이유는 아직 아무데서도 안가져다 쓴다는 말임ㅇㅇ
 class StudentAdapter(
     val mContext : Context,
     val resId : Int,
