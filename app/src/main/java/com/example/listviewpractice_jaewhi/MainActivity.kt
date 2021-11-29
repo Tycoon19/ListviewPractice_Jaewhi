@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
         mAdapter = StudentAdapter(this, R.layout.student_list_item, mStudentList)
 
         studentlistView.adapter = mAdapter
-
+//      여기까지만 하면 애뮬레이터 결과에선 "학생이름 (1999년생)"밖에 안 뜸. 그 이유는 StudentAdapter에서 student_list_item의 layout만 따왔기 때문에!!!!
     }
 }
