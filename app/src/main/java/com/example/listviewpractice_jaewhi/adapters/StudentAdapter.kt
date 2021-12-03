@@ -10,7 +10,7 @@ import com.example.listviewpractice_jaewhi.R
 import com.example.listviewpractice_jaewhi.datas.Student
 //    StudentAdapter가 회색인 이유는 아직 아무데서도 안가져다 쓴다는 말임ㅇㅇ
 class StudentAdapter(
-//  Context는 내가 지금 보고있는 화면이 어딘가요라는 화면정보.
+//  Context는 내가 지금 보고있는 화면이 어딘가요 라는 화면정보.
     val mContext : Context,
     val resId : Int,
     val mList : ArrayList<Student>) : ArrayAdapter<Student>(mContext, resId, mList) {

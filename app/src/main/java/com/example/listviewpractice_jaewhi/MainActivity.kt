@@ -2,6 +2,7 @@ package com.example.listviewpractice_jaewhi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.listviewpractice_jaewhi.adapters.StudentAdapter
 import com.example.listviewpractice_jaewhi.datas.Student
 import kotlinx.android.synthetic.main.activity_main.*
@@ -26,5 +27,15 @@ class MainActivity : AppCompatActivity() {
 
         studentlistView.adapter = mAdapter
 //      여기까지만 하면 애뮬레이터 결과에선 "학생이름 (1999년생)"밖에 안 뜸. 그 이유는 StudentAdapter에서 student_list_item의 layout만 따왔기 때문에!!!!
+        
+        studentlistView.setOnItemClickListener { parent, view, position, id ->
+
+        val clickedStudent = mStudentList[position]
+
+            Toast.makeText(this, "${clickedStudent.name}가 클릭 됨.", Toast.LENGTH_SHORT).show()
+
+
+        }
+        
     }
 }
